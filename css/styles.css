@@ -99,14 +99,15 @@ header{
 
 /* MAIN */
 main{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 334px;
     background-color: white;
 }
+
 
 /* FOOTER */
 footer{
     width: 100%;
-    height: 334px;
     background-color:coral;
 }
