@@ -6,6 +6,8 @@
     /*COLORES*/
     --background-black: #201E1C;
     --foreground-black: #282623;
+    --background-white: #E5E5E5;
+    --foreground-white: #FFFFFF;
 }
 * {
     box-sizing: border-box;
@@ -20,6 +22,16 @@ body {
     font-size: 2.4rem;
     display: flex;
     flex-direction: column;
+}
+
+h2 {
+    /* DIMENSIONES*/
+    margin-top: 40px;
+    width: 90%;
+    font-size: 2.8rem;
+    
+    /* COLORES */
+    font-family: var(--title-font);
 }
 
 /* HEADER */
@@ -115,7 +127,27 @@ main section {
 }
 
 .main--rating-showcase {
+    /* POSICIÓN */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    /* DIMENSIONES */
+
+    /* COLORES Y OTROS ESTILOS */
+    background-color: var(--background-white);
+}
+
+.main--rating-showcase img {
+     /* DIMENSIONES */
+     margin: 60px 0px 0px 0px;
+}
+
+.main--rating-showcase p {
+    font-size: 1.5rem;
+    color: #757575;
+    margin: 10px 0 50px 0;
+    width: 90%; 
 }
 
 .main--features {
@@ -131,6 +163,13 @@ main section {
     /* COLORES */
     background-color: var(--background-black);
     color: white;
+}
+
+#features-slogan {
+    font-size: 1.5rem;
+    color: rgba(245, 245, 245, 0.74);
+    margin: 25px 0 25px 0;
+    width: 90%; 
 }
 
 .main--feature-container {
@@ -199,8 +238,33 @@ main section {
     margin: 25px 0px 0px 0px;
 }
 
+.main--price-selection {
+    /* POSICIÓN */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* DIMENSIONES */
+
+    /* COLORES Y OTROS ESTILOS */
+    background-color: var(--background-white);
+}
+
+.main--price-selection p {
+    font-size: 1.5rem;
+    color: #757575;
+    margin: 10px 0 50px 0;
+    width: 90%; 
+}
+
 /* FOOTER */
 footer{
+    /* POSICIÓN */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* DIMENSIONES */
     width: 100%;
     
     /* COLORES */
@@ -208,7 +272,44 @@ footer{
     color: white;
 }
 
-footer a {
+.footer--links {
+    /* POSICIÓN */
+    display: flex;
+    flex-direction: column;
+    
+    /* DIMENSIONES */
+    margin: 40px 50px 40px 0px;
+    font-size: 1.4rem;
+    
+    /* COLORES */
+
+}
+
+.footer--links a {
+    /* DIMENSIONES */
+    margin: 6px 0px;
+
+    /* COLORES */
     text-decoration: none;
     color: white;
+}
+
+.footer--creator-logo {
+    /* POSICIÓN */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* DIMENSIONES */
+    
+    /* COLORES */
+    font-size: 1.2rem;
+
+}
+
+.footer--creator-logo img {
+    /* DIMENSIONES */
+    width: 50px;
+    height: 45px;
+    margin-bottom: 10px;
 }
