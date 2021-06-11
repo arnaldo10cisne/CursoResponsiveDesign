@@ -17,6 +17,7 @@
 html {
     font-size: 62.5%;
     font-family: var(--content-font);
+    min-width: 320px;
 }
 body {
     font-size: 2.4rem;
@@ -32,6 +33,16 @@ h2 {
     
     /* COLORES */
     font-family: var(--title-font);
+}
+
+td {
+    /* DIMENSIONES */
+    font-size: 1.5rem;
+    
+    /* COLORES */
+    background-color: var(--foreground-white);
+    border-top: 1px solid var(--background-white);
+    border-right: 1px solid var(--background-white);
 }
 
 /* HEADER */
