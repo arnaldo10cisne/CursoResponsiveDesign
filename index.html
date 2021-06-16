@@ -18,7 +18,7 @@
         <div class="header--title-container">
             <h1>La mayor revolución en videojuegos de scroll lateral.</h1>
             <p>Los Metroidvania combinan lo mejor de la exploración, el combate y las plataformas.</p>
-            <a href="" class="header--button">Conoce Nuestros Juegos <span></span> </a>
+            <a href="#main--price-selection" class="header--button">Conoce Nuestros Juegos <span></span> </a>
         </div>
     </header>
 
@@ -30,54 +30,39 @@
             <h2>Se trata de los juegos mejor valorados.</h2>
             <p>Mantenemos actualizados las calificaciones de Metacritic de los Metroidvania más importantes del mundo.</p>
             <div class="main--rating-showcase--table-container">
-                <div>
+                <div class="table-container" id="critics-container">
                     <p>Calificaciones de Críticos</p>
-                    <table id="table-critics">
-                        <tr>
-                            <td>Hollow Knight</td>
-                            <td>100%</td>
-                        </tr>
-                        <tr>
-                            <td>Blasphemous</td>
-                            <td>100%</td>
-                        </tr>
-                        <tr>
-                            <td>Bloodstained: Ritual of the Night</td>
-                            <td>100%</td>
-                        </tr>
-                        <tr>
-                            <td>Ori and the Blind Forest</td>
-                            <td>100%</td>
-                        </tr>
-                    </table>
+                    <div id="grid-critics">
+                        <p class="table-element table-title"> <a href="https://www.metacritic.com/game/pc/hollow-knight" target=”_blank”>Hollow Knight</a> </p>
+                        <p class="table-element table-data">87 <span><img src="./assets/icons/thumbs_up_icon.png" alt=""></span></p>
+                        <p class="table-element table-title"><a href="https://www.metacritic.com/game/pc/blasphemous" target=”_blank”>Blasphemous</a></p>
+                        <p class="table-element table-data">77 <span><img src="./assets/icons/thumbs_up_icon.png" alt=""></span></p>
+                        <p class="table-element table-title"><a href="https://www.metacritic.com/game/pc/bloodstained-ritual-of-the-night" target=”_blank”>Bloodstained: Ritual of the Night</a></p>
+                        <p class="table-element table-data">83 <span><img src="./assets/icons/thumbs_up_icon.png" alt=""></span></p>
+                        <p class="table-element table-title"><a href="https://www.metacritic.com/game/pc/ori-and-the-blind-forest" target=”_blank”>Ori and the Blind Forest</a></p>
+                        <p class="table-element table-data">88 <span><img src="./assets/icons/thumbs_up_icon.png" alt=""></span></p>
+                    </div>
                 </div>
-                <div>
+                <div class="table-container">
                     <p>Calificaciones de Usuarios</p>
-                    <table id="table-users">
-                        <tr>
-                            <td>Hollow Knight</td>
-                            <td>100%</td>
-                        </tr>
-                        <tr>
-                            <td>Blasphemous</td>
-                            <td>100%</td>
-                        </tr>
-                        <tr>
-                            <td>Bloodstained: Ritual of the Night</td>
-                            <td>100%</td>
-                        </tr>
-                        <tr>
-                            <td>Ori and the Blind Forest</td>
-                            <td>100%</td>
-                        </tr>
-                    </table>
+                    <div id="grid-users">
+                        <p class="table-element table-title"><a href="https://www.metacritic.com/game/pc/hollow-knight" target=”_blank”>Hollow Knight</a></p>
+                        <p class="table-element table-data">9.0 <span><img src="./assets/icons/thumbs_up_icon.png" alt=""></span></p>
+                        <p class="table-element table-title"><a href="https://www.metacritic.com/game/pc/blasphemous" target=”_blank”>Blasphemous</a></p>
+                        <p class="table-element table-data">6.4 <span><img src="./assets/icons/thumbs_up_icon.png" alt=""></span></p>
+                        <p class="table-element table-title"><a href="https://www.metacritic.com/game/pc/bloodstained-ritual-of-the-night" target=”_blank”>Bloodstained: Ritual of the Night</a></p>
+                        <p class="table-element table-data">8.4 <span><img src="./assets/icons/thumbs_up_icon.png" alt=""></span></p>
+                        <p class="table-element table-title"><a href="https://www.metacritic.com/game/pc/ori-and-the-blind-forest" target=”_blank”>Ori and the Blind Forest</a></p>
+                        <p class="table-element table-data">8.7 <span><img src="./assets/icons/thumbs_up_icon.png" alt=""></span></p>
+                    </div>
                 </div>
-                <p>Actualizado constantemente</p>
             </div>
+            <p id="update-disclosure">Actualizado constantemente</p>
         </section>
         
         <!-- SECTION 2:  -->        
         <section class="main--features">
+            <img src="./assets/img/skull.png" alt="" width="60px">
             <h2>Juegos únicos en su estilo.</h2>
             <p id="features-slogan">Confiables y diseñadas para jugar a diario.</p>
             <div class="main--feature-container">
@@ -111,23 +96,76 @@
         </section>
         
         <!-- SECTION 4:  --> 
-        <section class="main--price-selection">
+        <section id="main--price-selection">
             <h2>Escoge el juego que mejor se ajuste a ti.</h2>
             <p>Cualquier juego te dara una experiencia inolvidable.</p>
+
+            <section class="main--price-selection--card-container">
+                
+                <div class="game-card">
+                    <p>Precio</p>
+                    <p><span>COL$</span>32.000</p>
+                    <img src="./assets/img/hollow-knight.jpg" alt="">
+                    <p class="game-card--name">Hollow Knight</p>
+                    <a href="https://store.steampowered.com/app/367520/Hollow_Knight/" target=”_blank” class="game-card--choose-button"><p>Escoger este<span><img src="./assets/icons/arrow_icon.png" alt=""></span></p></a>
+                </div>
+                
+                <div class="game-card">
+                    <p>Precio</p>
+                    <p><span>COL$</span>33.500</p>
+                    <img src="./assets/img/blasphemous.jpeg" alt="">
+                    <p class="game-card--name">Blasphemous</p>
+                    <a href="https://store.steampowered.com/app/774361/Blasphemous/" target=”_blank” class="game-card--choose-button"><p>Escoger este<span><img src="./assets/icons/arrow_icon.png" alt=""></span></p></a>
+                </div>
+                
+                <div class="game-card">
+                    <p>Precio</p>
+                    <p><span>COL$</span>189.000</p>
+                    <img src="./assets/img/bloodstained.jpeg" alt="">
+                    <p class="game-card--name">Bloodstained: Ritual of the Night</p>
+                    <a href="https://store.steampowered.com/app/692850/Bloodstained_Ritual_of_the_Night/" target=”_blank” class="game-card--choose-button"><p>Escoger este<span><img src="./assets/icons/arrow_icon.png" alt=""></span></p></a>
+                </div>
+                
+                <div class="game-card">
+                    <p>Precio</p>
+                    <p><span>COL$</span>29.900</p>
+                    <img src="./assets/img/ori.jpg" alt="">
+                    <p class="game-card--name">Ori and the Blind Forest</p>
+                    <a href="https://store.steampowered.com/app/261570/Ori_and_the_Blind_Forest/" target=”_blank” class="game-card--choose-button"><p>Escoger este<span><img src="./assets/icons/arrow_icon.png" alt=""></span></p></a>
+                </div>
+            
+            </section>
+
         </section>
     </main>
 
-    <!-- FOOTER DE LA PÁGINA -->
+    <!-- FOOTER SECTION -->
     <footer>
-        <section class="footer--links">
-            <a href="">Linkedin</a>
-            <a href="">Github</a>
-            <a href="">Instagram</a>
+
+        <!-- SOCIAL MEDIA LINKS -->
+        <section id="footer--social-media-section">
+            
+            <p>Sígueme!</p>
+            
+            <div>
+                <a href="https://github.com/arnaldo10cisne" target="_blank" rel="noopener noreferrer"><img id="github-icon" src="./assets/icons/github-icon.png" alt="" width="50px"></a>
+
+                <a href="https://www.linkedin.com/in/arnaldo-cisneros-a36a1718a/" target="_blank" rel="noopener noreferrer"><img id="linkedin-icon" src="./assets/icons/linkedin-icon.png" alt="" width="50px"></a>
+
+                <a href="https://www.instagram.com/arnaldo10cisne/" target="_blank" rel="noopener noreferrer"><img id="instagram-icon" src="./assets/icons/instagram-icon.png" alt="" width="50px"></a>
+            </div>
+            
+
         </section>
-        <section class="footer--creator-logo">
-            <img src="./assets/img/chozo_symbo.png" alt="">
-            <p>Arnaldo Cisneros. 2021</p>
+
+        <!-- LOGO AND CONTACT INVITATION -->
+        <section id="footer--logo-contact-section">
+            <a href="https://arnaldo10cisne.github.io/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logo_small_icon_only(2).png" alt="" height="60px">
+                <p>Arnaldo Cisneros. 2021</p>
+            </a>   
         </section>
+
     </footer>
 </body>
 </html>

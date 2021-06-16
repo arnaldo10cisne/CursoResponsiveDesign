@@ -35,16 +35,6 @@ h2 {
     font-family: var(--title-font);
 }
 
-td {
-    /* DIMENSIONES */
-    font-size: 1.5rem;
-    
-    /* COLORES */
-    background-color: var(--foreground-white);
-    border-top: 1px solid var(--background-white);
-    border-right: 1px solid var(--background-white);
-}
-
 /* HEADER */
 header{
     position: static;
@@ -130,7 +120,7 @@ main{
     background-color: white;
 }
 
-main section {
+main > section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -144,25 +134,146 @@ main section {
     align-items: center;
 
     /* DIMENSIONES */
+    width: 100%;
 
     /* COLORES Y OTROS ESTILOS */
     background-color: var(--background-white);
 }
 
-.main--rating-showcase img {
+.main--rating-showcase > img {
      /* DIMENSIONES */
-     margin: 60px 0px 0px 0px;
+     margin-top: 60px;
 }
 
-.main--rating-showcase p {
+.main--rating-showcase > p {
     font-size: 1.5rem;
     color: #757575;
-    margin: 10px 0 50px 0;
+    margin: 10px 0 30px 0;
     width: 90%; 
+}
+
+.main--rating-showcase--table-container {
+    /* POSICIÓN */
+    align-self: center;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+
+    /* DIMENSIONES */
+    width: 90%;
+
+    /* COLORES Y OTROS ESTILOS */
+}
+
+.table-container {
+    /* POSICIÓN */
+    display: flex;
+    flex-direction: column;
+
+    /* DIMENSIONES */
+    width: 100%;
+    min-width: 337.5px;
+    margin: 10px 0px;
+
+    /* COLORES Y OTROS ESTILOS */
+}
+
+#critics-container {
+    /* DIMENSIONES */
+    margin-right: 30px;
+}
+
+.table-container > p {
+    /* POSICIÓN */
+    text-align: left;
+    display: inline-block;
+    align-self: flex-start;
+
+    /* DIMENSIONES */
+
+    /* COLORES Y OTROS ESTILOS */
+    font-family: var(--content-font);
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: purple;
+    
+}
+
+.table-container div {
+    /* POSICIÓN */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* DIMENSIONES */
+    /* width: 100%; */
+    margin-top: 20px;
+
+    /* COLORES Y OTROS ESTILOS */
+    background-color: var(--foreground-white);
+    border-radius: 10px;
+}
+
+.table-container div p {
+    /* DIMENSIONES */
+    font-size: 1.5rem;
+    
+    /* COLORES */
+    border-top: 1px solid var(--background-white);
+    border-right: 1px solid var(--background-white);
+}
+
+.table-element {
+    /* POSICIÓN */
+
+    /* DIMENSIONES */
+    padding: 5px;
+
+    /* COLORES Y OTROS ESTILOS */
+}
+
+.table-title {
+    /* POSICIÓN */
+    grid-column: 1/3;
+}
+
+.table-title a {
+    /* POSICIÓN */
+    grid-column: 1/3;
+
+    /* DIMENSIONES */
+
+    /* COLORES Y OTROS ESTILOS */
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+}
+
+.table-data {
+    /* POSICIÓN */
+
+    /* DIMENSIONES */
+
+    /* COLORES Y OTROS ESTILOS */
+    color: rgb(145, 145, 145);
+}
+
+
+#update-disclosure {
+    /* POSICIÓN */
+
+    /* DIMENSIONES */
+    margin: 20px 0 40px 0;
+    padding: 10px;
+
+    /* COLORES Y OTROS ESTILOS */
+    color: black;
+    font-size: 1.5rem;
+    background-color: rgba(128, 0, 128, 0.13);
+    border-radius: 10px;
 }
 
 .main--features {
     /* POSICIÓN */
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,6 +285,11 @@ main section {
     /* COLORES */
     background-color: var(--background-black);
     color: white;
+}
+
+.main--features > img {
+    position: absolute;
+    top: -30px;
 }
 
 #features-slogan {
@@ -223,6 +339,8 @@ main section {
     text-align: left;
 }
 
+/*****************************************************/
+
 .main--images-rail {
     /* COLORES */
     background-color: purple;
@@ -249,7 +367,9 @@ main section {
     margin: 25px 0px 0px 0px;
 }
 
-.main--price-selection {
+/*****************************************************/
+
+#main--price-selection {
     /* POSICIÓN */
     display: flex;
     flex-direction: column;
@@ -261,66 +381,172 @@ main section {
     background-color: var(--background-white);
 }
 
-.main--price-selection p {
+#main--price-selection > p {
     font-size: 1.5rem;
     color: #757575;
-    margin: 10px 0 50px 0;
+    margin: 10px 0 40px 0;
     width: 90%; 
 }
 
-/* FOOTER */
-footer{
+.main--price-selection--card-container {
     /* POSICIÓN */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    overflow-x:scroll;
+
     /* DIMENSIONES */
     width: 100%;
-    
-    /* COLORES */
-    background-color:purple;
-    color: white;
+    padding: 0 20px;
+
+    /* COLORES Y OTROS ESTILOS */
+    background-color: var(--background-white);
 }
 
-.footer--links {
+.game-card {
     /* POSICIÓN */
     display: flex;
     flex-direction: column;
-    
-    /* DIMENSIONES */
-    margin: 40px 50px 40px 0px;
-    font-size: 1.4rem;
-    
-    /* COLORES */
-
-}
-
-.footer--links a {
-    /* DIMENSIONES */
-    margin: 6px 0px;
-
-    /* COLORES */
-    text-decoration: none;
-    color: white;
-}
-
-.footer--creator-logo {
-    /* POSICIÓN */
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     
     /* DIMENSIONES */
-    
-    /* COLORES */
-    font-size: 1.2rem;
+    width: 80%;
+    /* max-width: 226px; */
+    min-width: 300px;
+    margin: 0px 20px 30px 20px;
+
+    /* COLORES Y OTROS ESTILOS */
+    background-color: var(--foreground-white);
+    border-radius: 15px;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.253);
 
 }
 
-.footer--creator-logo img {
+.game-card > p:first-child {
+    /* POSICIÓN */
+
     /* DIMENSIONES */
-    width: 50px;
-    height: 45px;
-    margin-bottom: 10px;
+    margin: 10px;
+
+    /* COLORES Y OTROS ESTILOS */
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.game-card > p:nth-child(2) {
+    /* POSICIÓN */
+    display: flex;
+
+    /* DIMENSIONES */
+    margin: 0px 0px 10px 0;
+
+    /* COLORES Y OTROS ESTILOS */
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.game-card > p:nth-child(2) span {
+    /* POSICIÓN */
+
+    /* DIMENSIONES */
+    padding-top: 10px;
+    margin-right: 10px;
+
+    /* COLORES Y OTROS ESTILOS */
+    font-size: 1.5rem;
+}
+
+.game-card > img {
+    /* POSICIÓN */
+
+    /* DIMENSIONES */
+    max-width: 200px;
+    width: 70%;
+    height: 100px;
+
+    /* COLORES Y OTROS ESTILOS */
+    background-color: purple;
+}
+
+.game-card--name {
+    /* POSICIÓN */
+
+    /* DIMENSIONES */
+    margin: 10px 0;
+    padding: 0 10px;
+
+    /* COLORES Y OTROS ESTILOS */
+    font-family: var(--title-font);
+    font-size: 3rem;
+}
+
+.game-card--choose-button {
+    /* POSICIÓN */
+
+    /* DIMENSIONES */
+    margin: 10px 0;
+    padding: 10px;
+
+    /* COLORES Y OTROS ESTILOS */
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: rgba(128, 0, 128, 0.171);
+    border-radius: 10px;
+}
+
+.game-card--choose-button img {
+    /* POSICIÓN */
+
+    /* DIMENSIONES */
+    padding-left: 10px;
+    padding-top: 5px;
+
+    /* COLORES Y OTROS ESTILOS */
+}
+
+
+/*****************************************************/
+
+/* FOOTER STYLES */
+
+footer {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+        
+    /* DIMENSIONS */
+    height: 100px;
+    padding: 60px 0;
+    
+    /* COLORS AND OTHER STYLES */
+    background-color: purple;
+    font-weight: bold;
+    color: white;
+    font-family: var(--content-font);
+}
+
+#footer--social-media-section {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* COLORS AND OTHER STYLES */
+    color: inherit;
+}
+
+#footer--social-media-section img {
+    filter: invert(1);
+}
+
+#footer--logo-contact-section a {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* COLORS AND OTHER STYLES */
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
 }
