@@ -23,6 +23,8 @@ body {
     font-size: 2.4rem;
     display: flex;
     flex-direction: column;
+    overflow-x:hidden;
+    
 }
 
 h2 {
@@ -42,9 +44,7 @@ header{
     flex-direction: column;
     justify-content:space-evenly;
     align-items: center;
-    width: 100%;
     min-width: 320px;
-    /* height: 334px; */
     text-align: center;
 
     background: linear-gradient(207.8deg, #201E1C 16.69%, #ff00f2 100%);
@@ -162,7 +162,7 @@ main > section {
     overflow-x: scroll;
 
     /* DIMENSIONES */
-    width: 90%;
+    width: 100vw;
 
     /* COLORES Y OTROS ESTILOS */
 }
@@ -173,8 +173,10 @@ main > section {
     flex-direction: column;
 
     /* DIMENSIONES */
-    width: 100%;
-    min-width: 337.5px;
+    padding: 0 15px;
+    /* width: 100vw; */
+    min-width: 100vw;
+    
     margin: 10px 0px;
 
     /* COLORES Y OTROS ESTILOS */
@@ -431,11 +433,20 @@ main > section {
     overflow-x:scroll;
 
     /* DIMENSIONES */
-    width: 100%;
-    padding: 0 20px;
+    max-width: 100vw;
+    margin: 0 0 20px 0;
+    min-height: 330px;
 
     /* COLORES Y OTROS ESTILOS */
     background-color: var(--background-white);
+}
+
+.card-container {
+    /* DIMENSIONES */
+    display: flex;
+    align-items: center;
+    min-width: 100vw;
+    height: 100%;
 }
 
 .game-card {
@@ -446,10 +457,9 @@ main > section {
     align-items: center;
     
     /* DIMENSIONES */
-    width: 80%;
-    /* max-width: 226px; */
-    min-width: 300px;
-    margin: 0px 20px 30px 20px;
+    width: 70%;
+    height: 90%;
+    margin: auto auto;
 
     /* COLORES Y OTROS ESTILOS */
     background-color: var(--foreground-white);
@@ -504,6 +514,17 @@ main > section {
     background-color: purple;
 }
 
+.game-card--name_CONT {
+    /* POSICIÓN */
+
+    /* DIMENSIONES */
+    max-height: 20%;
+
+    /* COLORES Y OTROS ESTILOS */
+    /* background-color: purple; */
+
+}
+
 .game-card--name {
     /* POSICIÓN */
 
@@ -513,7 +534,7 @@ main > section {
 
     /* COLORES Y OTROS ESTILOS */
     font-family: var(--title-font);
-    font-size: 3rem;
+    /* font-size: auto; */
 }
 
 .game-card--choose-button {
