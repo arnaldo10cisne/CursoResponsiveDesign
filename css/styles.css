@@ -18,12 +18,14 @@ html {
     font-size: 62.5%;
     font-family: var(--content-font);
     min-width: 320px;
+    max-width: 100vw;
 }
 body {
     font-size: 2.4rem;
     display: flex;
     flex-direction: column;
     overflow-x:hidden;
+    max-width: 100vw;
     
 }
 
@@ -142,12 +144,19 @@ main > section {
     background-color: var(--background-white);
 }
 
-.main--rating-showcase > img {
-     /* DIMENSIONES */
-     margin-top: 60px;
+.main--rating-showcase--info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.main--rating-showcase > p {
+.main--rating-showcase--info > img {
+     /* DIMENSIONES */
+     margin-top: 60px;
+     max-width: 300px;
+}
+
+.main--rating-showcase--info > p {
     font-size: 1.5rem;
     color: #757575;
     margin: 10px 0 30px 0;
@@ -255,6 +264,7 @@ main > section {
     /* POSICIÓN */
 
     /* DIMENSIONES */
+    padding: auto 0;
 
     /* COLORES Y OTROS ESTILOS */
     color: rgb(145, 145, 145);
@@ -265,6 +275,7 @@ main > section {
     /* POSICIÓN */
 
     /* DIMENSIONES */
+    width: 300px;
     margin: 20px 0 40px 0;
     padding: 10px;
 
@@ -337,6 +348,14 @@ main > section {
     width: 90%; 
 }
 
+.features-flex-container {
+    /* POSICIÓN */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .main--feature-container {
     /* POSICIÓN */
     display: flex;
@@ -351,7 +370,6 @@ main > section {
     background-color: var(--foreground-black);
     border-radius: 10px;
     box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.253);
-    
 }
 
 .main--feature-title {
@@ -383,6 +401,7 @@ main > section {
     /* COLORES */
     background-color: purple;
     color: white;
+    overflow:hidden;
 }
 
 .main--images-rail img {
@@ -430,6 +449,7 @@ main > section {
 .main--price-selection--card-container {
     /* POSICIÓN */
     display: flex;
+    align-items: center;
     overflow-x:scroll;
 
     /* DIMENSIONES */
@@ -454,12 +474,16 @@ main > section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-self: center;
     align-items: center;
     
     /* DIMENSIONES */
+    
     width: 70%;
-    height: 90%;
-    margin: auto auto;
+    margin: 10px auto;
+    max-width: 300px;
+    
+    
 
     /* COLORES Y OTROS ESTILOS */
     background-color: var(--foreground-white);
@@ -509,6 +533,7 @@ main > section {
     max-width: 200px;
     width: 70%;
     height: 100px;
+    min-height: 100px;
 
     /* COLORES Y OTROS ESTILOS */
     background-color: purple;
@@ -534,7 +559,6 @@ main > section {
 
     /* COLORES Y OTROS ESTILOS */
     font-family: var(--title-font);
-    /* font-size: auto; */
 }
 
 .game-card--choose-button {
